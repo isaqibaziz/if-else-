@@ -13,24 +13,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Contact Link -->
-
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+     
+    <!-- <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
 </head>
 
 <body>
     <div class="main-content">
         <nav class="navbar">
             <ul class="navbar-list">
-                <li class="navbar-item"><button class="navbar-link active" data-nav-link>Home</button></li>
-                <li class="navbar-item"><button class="navbar-link" data-nav-link>About</button></li>
-                <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
-                <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+                <li class="navbar-item"><a href="#home" class="navbar-link active">Home</a></li>
+                <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+                <li class="navbar-item"><a href="#skills" class="navbar-link">Skills</a></li>
+                <li class="navbar-item"><a href="#portfolio" class="navbar-link">Portfolio</a></li>
+                <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
             </ul>
         </nav>
 
-        <div class="container">
+        <div class="container" id="home">
             <div class="landing-page">
                 <h2>Hi, I'm <span>Saqib Aziz</span></h2>
                 <p>A passionate <strong class="highlight">Frontend Web Developer </strong>skilled in building modern,
@@ -52,14 +53,15 @@
             <a href="https://www.linkedin.com/in/saqiaziz09/" target="_blank" class="btn" style="background:#0e76a8;">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=azizsaqib057@gmail.com" target="_blank" class="btn" style="background: rgb(217, 62, 42);">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=azizsaqib057@gmail.com" target="_blank" class="btn"
+                style="background: rgb(217, 62, 42);">
                 <i class="far fa-envelope"></i>
             </a>
         </div>
 
     </div>
 
-    <div class="about-container" role="main" aria-label="About me section">
+    <div class="about-container" id="about" role="main" aria-label="About me section">
         <section class="content">
             <h2 class="about-me-label" aria-label="About me header">About me!</h2>
             <p>Hi, I'm a passionate <strong class="highlight">Frontend Developer</strong> with expertise in <strong
@@ -75,7 +77,7 @@
         </section>
     </div>
 
-    <section class="skills-section">
+    <section class="skills-section" id="skills">
         <h2 class="section-title">My Skills</h2>
 
         <div class="skills-container">
@@ -122,7 +124,7 @@
         </div>
     </section>
 
-    <article class="portfolio" data-page="portfolio">
+    <article class="portfolio" id="portfolio" data-page="portfolio">
         <header>
             <h2 class="h2 article-title">Portfolio</h2>
         </header>
@@ -293,27 +295,23 @@
         </section>
     </article>
 
-    <article class="contact" data-page="contact">
+    <!-- contact-form -->
 
+    <article class="contact" id="contact" data-page="contact">
         <section class="contact-form">
             <h3 class="form-title">Contact Form</h3>
-
-            <form action="#" class="form" data-form>
+            <form action="https://formspree.io/f/mqallvzb" method="POST" class="form" data-form>
                 <div class="input-wrapper">
-                    <input type="text" name="fullname" class="form-input" placeholder="Full name" required
-                        data-form-input>
+                    <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
                     <input type="email" name="email" class="form-input" placeholder="Email Address" required
                         data-form-input>
                 </div>
-
                 <textarea name="message" class="form-input" placeholder="Your Message" required
                     data-form-input></textarea>
-
                 <button class="form-btn" type="submit" disabled data-form-btn>
                     <ion-icon name="paper-plane"></ion-icon>
                     <span>Send Message</span>
                 </button>
-
                 <div class="form-status" data-form-status></div>
             </form>
         </section>
