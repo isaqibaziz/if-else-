@@ -140,7 +140,7 @@ body { background: var(--smoky-black);
     align-items: center;
     width: 100%;
     padding: 30px;
-    max-width: 1236px;
+    max-width: 1280px;
     margin: 0 auto;
     height: 600px;
     /* border-radius: 14px; */
@@ -222,7 +222,7 @@ body { background: var(--smoky-black);
 /* ===== About Section  ===== */
 
 .about-container {
-    max-width: 1236px;
+    max-width: 1280px;
     height: 550px;
     margin: 110px auto 0;
     display: flex;
@@ -270,7 +270,7 @@ body { background: var(--smoky-black);
 .skills-section {
     padding: 55px 20px;
     text-align: center;
-    max-width: 1236px;
+    max-width: 1280px;
     margin: 0px auto;
     /* border-radius: 14px; */
 }
@@ -609,7 +609,7 @@ body { background: var(--smoky-black);
 .contact {
     background: var(--onyx);
     padding: 30px 5%;
-    max-width: 1230px;
+    max-width: 1280px;
     /* margin: 0 auto; */
 }
 
@@ -811,7 +811,7 @@ textarea.form-input {
     .container,
     .about-container,
     .skills-section {
-        max-width: 95%;
+        max-width: 100%;
     }
 }
 
@@ -896,11 +896,6 @@ textarea.form-input {
         padding: 50px 5%;
     }
 
-    .mapbox {
-        height: 300px;
-        margin-bottom: 40px;
-    }
-
     .contact-form {
         padding: 30px;
     }
@@ -953,17 +948,13 @@ textarea.form-input {
         line-height: 50px;
         font-size: 24px;
     }
-        .contact {
+    
+    .contact {
         padding: 40px 5%;
     }
 
     .article-title {
         font-size: 2rem;
-    }
-
-    .mapbox {
-        height: 250px;
-        margin-bottom: 30px;
     }
 
     .contact-form {
